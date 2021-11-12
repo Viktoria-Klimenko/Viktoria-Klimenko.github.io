@@ -1,0 +1,40 @@
+body {
+    background-color: #9370DB;
+}
+
+#flex {
+    flex-direction: row;
+}
+
+nav {
+    background-color: #D8BFD8;
+}
+
+main {
+    background-color: #D8BFD8;
+}
+
+h1 {
+    color: #FFE4E1;
+}
+
+#rec {
+    font-size: 10pt;
+}
+
+#flex {
+    display: flex;
+    flex-direction: row;
+
+    font-size: 15pt;
+}
+
+#steps {
+    background-color: #D8BFD8;
+}
+
+ol {
+    font-size: 20pt;
+    color: #008000;
+}
+
