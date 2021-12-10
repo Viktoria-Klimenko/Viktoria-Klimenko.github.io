@@ -1,10 +1,12 @@
+import {is_equal} from "./game.js"
+
 export const canvas = document.querySelector('#canvas')
 const ctx = canvas.getContext('2d')
 const d = 3
 const tileWidth = canvas.width / d
 const tileHeight = canvas.height / d
-const tileColor = '#ccccff'
-const canvasColor = '#eee'
+const tileColor = '#ff9d57'
+const canvasColor = '#faf0e6'
 canvas.style.backgroundColor = canvasColor
 
 class Tile
@@ -26,7 +28,7 @@ class Tile
             ctx.fillRect(this.col * tileWidth, this.row * tileHeight, tileWidth, tileHeight)
             ctx.strokeRect(this.col * tileWidth, this.row * tileHeight, tileWidth, tileHeight)
             ctx.font = `${tileWidth * 0.6}px Arial`
-            ctx.fillStyle = "blue"
+            ctx.fillStyle = "green"
             ctx.textAlign = 'center'
             ctx.textBaseline = "middle"
             ctx.fillText(this.val, this.col * tileWidth + tileWidth / 2, this.row * tileHeight + tileHeight / 2)
